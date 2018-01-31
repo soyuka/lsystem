@@ -1,0 +1,17 @@
+{
+  "name": "lsystem",
+  "version": "1.0.0",
+  "description": "A simple utility to produce L-System stacks.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soyuka/lsystem.git"
+  },
+  "keywords": ["lsystem"],
+  "author": "soyuka <soyuka@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soyuka/lsystem/issues"
+  },
+  "homepage": "https://github.com/soyuka/lsystem#readme"
+}
