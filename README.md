@@ -1,6 +1,6 @@
 # lsystem
 
-A simple utility to produce L-System stacks.
+A simple utility to produce L-System stacks. (16 sloc)
 
 See: https://en.wikipedia.org/wiki/L-system
 

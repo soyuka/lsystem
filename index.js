@@ -1,7 +1,7 @@
 module.exports = doTree
 
 // https://en.wikipedia.org/wiki/L-system
-function doTree(num, rule, init) {
+function doTree (num, rule, init) {
   var stack = [init]
   var cursor = 0
   while(--num) {
@@ -12,11 +12,10 @@ function doTree(num, rule, init) {
   return stack
 }
 
-function grow(tree, rule) {
-  let res = ''
+function grow (tree, rule) {
+  var res = ''
   for (let i = 0; i < tree.length; i++) {
-    const foo = rule(tree[i])
-    res += foo
+    res += rule(tree[i])
   }
 
   return res
