@@ -1,5 +1,5 @@
 {
-  "name": "lsystem",
+  "name": "sysl",
   "version": "1.0.0",
   "description": "A simple utility to produce L-System stacks.",
   "main": "index.js",
