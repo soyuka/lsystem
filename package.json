@@ -1,13 +1,15 @@
 {
   "name": "sysl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple utility to produce L-System stacks.",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/soyuka/lsystem.git"
   },
-  "keywords": ["lsystem"],
+  "keywords": [
+    "lsystem"
+  ],
   "author": "soyuka <soyuka@gmail.com>",
   "license": "MIT",
   "bugs": {
