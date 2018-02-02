@@ -23,7 +23,7 @@ function rule (v) {
       return 'F+F-F-F+F'
   }
 
-  return ''
+  return v
 }
 ```
 
@@ -44,8 +44,8 @@ ABAAB
 FractalTree
 0
 1[0]0
-111[0]01[0]0
-1111111[0]01[0]0111[0]01[0]0
+11[1[0]0]1[0]0
+1111[11[1[0]0]1[0]0]11[1[0]0]1[0]0
 Cantor
 A
 ABA
@@ -54,11 +54,11 @@ ABABBBABABBBBBBBBBABABBBABA
 Koch
 F
 F+F-F-F+F
-F+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+F
-F+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+FF+F-F-F+F
+F+F-F-F+F+F+F-F-F+F-F+F-F-F+F-F+F-F-F+F+F+F-F-F+F
+F+F-F-F+F+F+F-F-F+F-F+F-F-F+F-F+F-F-F+F+F+F-F-F+F+F+F-F-F+F+F+F-F-F+F-F+F-F-F+F-F+F-F-F+F+F+F-F-F+F-F+F-F-F+F+F+F-F-F+F-F+F-F-F+F-F+F-F-F+F+F+F-F-F+F-F+F-F-F+F+F+F-F-F+F-F+F-F-F+F-F+F-F-F+F+F+F-F-F+F+F+F-F-F+F+F+F-F-F+F-F+F-F-F+F-F+F-F-F+F+F+F-F-F+F
 Fractal
 X
 F[-X][X]F[-X]+FX
-FFF[-X][X]F[-X]+FXF[-X][X]F[-X]+FXFFF[-X][X]F[-X]+FXFFF[-X][X]F[-X]+FX
-FFFFFFF[-X][X]F[-X]+FXF[-X][X]F[-X]+FXFFF[-X][X]F[-X]+FXFFF[-X][X]F[-X]+FXFFF[-X][X]F[-X]+FXF[-X][X]F[-X]+FXFFF[-X][X]F[-X]+FXFFF[-X][X]F[-X]+FXFFFFFFF[-X][X]F[-X]+FXF[-X][X]F[-X]+FXFFF[-X][X]F[-X]+FXFFF[-X][X]F[-X]+FXFFFFFFF[-X][X]F[-X]+FXF[-X][X]F[-X]+FXFFF[-X][X]F[-X]+FXFFF[-X][X]F[-X]+FX
+FF[-F[-X][X]F[-X]+FX][F[-X][X]F[-X]+FX]FF[-F[-X][X]F[-X]+FX]+FFF[-X][X]F[-X]+FX
+FFFF[-FF[-F[-X][X]F[-X]+FX][F[-X][X]F[-X]+FX]FF[-F[-X][X]F[-X]+FX]+FFF[-X][X]F[-X]+FX][FF[-F[-X][X]F[-X]+FX][F[-X][X]F[-X]+FX]FF[-F[-X][X]F[-X]+FX]+FFF[-X][X]F[-X]+FX]FFFF[-FF[-F[-X][X]F[-X]+FX][F[-X][X]F[-X]+FX]FF[-F[-X][X]F[-X]+FX]+FFF[-X][X]F[-X]+FX]+FFFFFF[-F[-X][X]F[-X]+FX][F[-X][X]F[-X]+FX]FF[-F[-X][X]F[-X]+FX]+FFF[-X][X]F[-X]+FX
 ```

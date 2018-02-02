@@ -28,7 +28,7 @@ function FractalTree(num, init = '0') {
         return '1[0]0'
     }
 
-    return ''
+    return v
   }
 }
 
@@ -45,7 +45,7 @@ function Cantor(num, init = 'A') {
         return 'BBB'
     }
 
-    return ''
+    return v
   }
 }
 
@@ -60,7 +60,7 @@ function Koch(num, init = 'F') {
         return 'F+F-F-F+F'
     }
 
-    return ''
+    return v
   }
 }
 
@@ -77,7 +77,7 @@ function Fractal(num, init = 'X') {
         return 'FF'
     }
 
-    return ''
+    return v
   }
 }
 
