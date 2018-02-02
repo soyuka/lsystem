@@ -5,8 +5,7 @@ function doTree (num, rule, init) {
   var stack = [init]
   var cursor = 0
   while(--num) {
-    stack.push(grow(stack[cursor], rule))
-    cursor++
+    stack.push(grow(stack[cursor++], rule))
   }
 
   return stack
