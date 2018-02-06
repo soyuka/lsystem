@@ -1,11 +1,14 @@
-module.exports = doTree
+module.exports = root
 
 // https://en.wikipedia.org/wiki/L-system
-function doTree (num, rule, init) {
-  var stack = [init]
-  var cursor = 0
-  while(--num) {
-    stack.push(grow(stack[cursor++], rule))
+function noop () {}
+
+function root (rule, iterations, init, onnext = noop) {
+  var stack = init
+  onnext(init)
+  while(--iterations) {
+    stack = grow(stack, rule)
+    onnext(stack)
   }
 
   return stack

@@ -1,7 +1,7 @@
 const lsystem = require('./')
 
-function Algae(num, init = 'A') {
-  return lsystem(num, rule, init)
+function Algae(iterations, init = 'A') {
+  return lsystem(rule, iterations, init)
 
   function rule (v) {
     switch (v) {
@@ -17,8 +17,8 @@ function Algae(num, init = 'A') {
 
 output('Algae', Algae(4))
 
-function FractalTree(num, init = '0') {
-  return lsystem(num, rule, init)
+function FractalTree(iterations, init = '0') {
+  return lsystem(rule, iterations, init)
 
   function rule (v) {
     switch (v) {
@@ -34,8 +34,8 @@ function FractalTree(num, init = '0') {
 
 output('FractalTree', FractalTree(4))
 
-function Cantor(num, init = 'A') {
-  return lsystem(num, rule, init)
+function Cantor(iterations, init = 'A') {
+  return lsystem(rule, iterations, init)
 
   function rule (v) {
     switch (v) {
@@ -51,8 +51,8 @@ function Cantor(num, init = 'A') {
 
 output('Cantor', Cantor(4))
 
-function Koch(num, init = 'F') {
-  return lsystem(num, rule, init)
+function Koch(iterations, init = 'F') {
+  return lsystem(rule, iterations, init)
 
   function rule (v) {
     switch (v) {
@@ -66,8 +66,8 @@ function Koch(num, init = 'F') {
 
 output('Koch', Koch(4))
 
-function Fractal(num, init = 'X') {
-  return lsystem(num, rule, init)
+function Fractal(iterations, init = 'X') {
+  return lsystem(rule, iterations, init)
 
   function rule (v) {
     switch (v) {
@@ -85,8 +85,5 @@ output('Fractal', Fractal(4))
 
 function output (title, v) {
   console.log(title)
-
-  for (let i = 0; i < v.length; i++) {
-    console.log(v[i])
-  }
+  console.log(v)
 }

@@ -9,14 +9,24 @@ See: https://en.wikipedia.org/wiki/L-system
 ```
 var lsystem = require('lsystem')
 /**
+ * @param (v: String): String rule (see below)
+ * @param {Number} iterations
+ * @param {Mixed} initial value
+ * @param (v: String): void callback with the next value
+ */
+lsystem(rule, 10, 'F', onnext)
+
+/**
  * Koch curve formula:
  * variables : F
  * constants : +-
  * start  : F
  * rules  : (F → F+F−F−F+F)
+ *
+ * @param {String} v the letter to convert
+ *
+ * @return {String} the transformed string or the given one (constants)
  */
-lsystem(10, rule, 'F')
-
 function rule (v) {
   switch (v) {
     case 'F':
@@ -25,6 +35,13 @@ function rule (v) {
 
   return v
 }
+
+const tree = []
+function onnext(v) {
+  tree.push(v)
+}
+
+console.log(tree)
 ```
 
 ## API:
